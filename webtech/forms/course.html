@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Course Registration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        display: flex;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 8px;
+        width: 400px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input,select,button {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+    }
+
+
+    button {
+        background-color: #acbfff;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #511c80;
+    }
+</style>
+</head>
+<body>
+
+
+    <form>
+        <h1>Student Course Registration</h1>
+        
+        <label>Student Name:</label>
+        <input type="text" id="studentName">
+
+        <label>Age:</label>
+        <input type="number" id="age" name="age" min="1">
+        <label>Date of Birth:</label>
+        <input type="month" id="dob" min="12-01-1990">
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="">Select Course</option>
+            <option value="Maths">Maths</option>
+            <option value="cs">cs</option>
+            <option value="chem">chemistry</option>
+            <option value="physics">physics</option>
+        </select>
+            <p>created by barkha arora</p>
+    </form>
+    
+
+</body>
+</html>

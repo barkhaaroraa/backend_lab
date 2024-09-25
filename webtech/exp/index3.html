@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom on Hover Example</title>
+    <style>
+        .zoom-item {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            transition: transform 5s;
+            animation: roate 2s infinite ;   
+        }
+        /* @keyframes roate{
+            10% {transform: rotate(360deg);}
+            
+        } */
+        .zoom-item:hover {
+            /* transform:rotate(360deg);  */
+            transform:rotate(180deg); 
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="zoom-item">Hover to Zoom</div>
+</body>
+</html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .animation{
+        background-color: antiquewhite;
+        transition: 9s;
+        animation: rotation 5s 1;
+    }
+    .animation:hover{
+        transform: scale(1.5);
+    }
+
+</style>
+<body>
+    <h1>ff</h1>
+    <h2>normal size</h2>
+
+    <h2 class="animation">element to be worked upon</h2>
+    
+</body>
+</html> -->

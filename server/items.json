@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "barkha",
+    "dob": "2024-08-02",
+    "location": "delgi",
+    "subjects": "Maths"
+  },
+  {
+    "id": 2,
+    "name": "second entry",
+    "dob": "2024-08-06",
+    "location": "dehradun",
+    "subjects": "Hindi"
+  },
+  {
+    "id": 3,
+    "name": "barkha",
+    "dob": "2024-08-02",
+    "location": "delgi",
+    "subjects": "Maths"
+  },
+  {
+    "id": 4,
+    "name": "sample data ",
+    "dob": "2024-07-29",
+    "location": "doon",
+    "subjects": "Science"
+  }
+]

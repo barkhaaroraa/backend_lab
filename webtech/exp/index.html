@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Style Sheet Example</title>
+    <style>
+
+        header {
+            background-color: #4CAF50;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position:sticky;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec lectus lectus. Donec blandit faucibus tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vel consectetur nibh. Nullam egestas sagittis lorem vitae viverra. Integer dapibus congue odio, sit amet fermentum felis tincidunt non. Sed et placerat velit. Sed vehicula mi sed sodales vehicula. Ut id nisl eu dolor luctus accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse a odio dictum, luctus magna et, accumsan ligula.
+
+    <footer>
+        footer
+    </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Template</title>
+  <style>
+  /* Styles for the webpage */
+    body, html {
+      margin: 0;
+      padding: 1rem;
+      font-family: sans-serif;
+    }
+
+    header.site-header {
+      background-color: #e84a5f; /* Salmon pink for header */
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav.navigation {
+      background-color: #fbfbfb; /* Light grey for navigation */
+      padding: 1rem;
+    }
+
+    nav.navigation ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav.navigation ul li {
+      display: inline-block;
+      margin-right: 1.5rem;
+    }
+
+    nav.navigation ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    main.content {
+      padding: 2rem;
+    }
+
+    /* Media query for responsive design */
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 0;
+      }
+
+      nav.navigation {
+        display: none; /* Hide navigation bar on smaller screens (optional) */
+      }
+
+      main.content {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Responsive Template</h1>
+  </header>
+  <nav class="navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="content">
+    <p>Main Content Goes Here</p>
+    <img src="image.jpg" alt="A captivating image">
+  </main>
+</body>
+</html>

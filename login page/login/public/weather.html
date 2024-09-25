@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in Dehradun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .weather-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .weather-icon {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="weather-container">
+    <h2>Current Temperature in Dehradun</h2>
+    <div id="temperature"></div>
+</div>
+
+<script>
+    // Replace with your OpenWeatherMap API key
+    const apiKey = ''; // Make sure to insert your OpenWeatherMap API key
+
+    // Coordinates for Dehradun (latitude and longitude)
+    const lat = 30.3165;
+    const lon = 78.0322;
+
+    // API URL using latitude and longitude for Dehradun's weather
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+
+    // Fetch the current weather data for Dehradun
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const temperatureContainer = document.getElementById('temperature');
+            const temperature = `${data.main.temp}°C`;  // Get the temperature in Celsius
+            temperatureContainer.innerHTML = `<p>Temperature: ${temperature}</p>`;
+        })
+        .catch(error => {
+            console.error('Error fetching weather data:', error);
+            document.getElementById('temperature').innerHTML = 'Error fetching weather data. Please try again later.';
+        });
+</script>
+</body>
+</html>
+

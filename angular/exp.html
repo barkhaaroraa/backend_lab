@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="myapp" ng-controller="control" ng-init="subs=[{subject:'math',score:'23'},{subject:'english',score:'43'}]">
+        <input type="checkbox" ng-model="button1">
+        <button ng-disabled="button1">button1</button>
+
+        <input type="checkbox" ng-model="button2">
+        <button ng-show="button2">button2</button>
+        <tr>
+            <td><p>Total click: {{ clickCounter }}</p></td>
+            <td><button ng-click = "clickCounter = clickCounter + 1">Click Me!</button></td>
+         </tr>
+
+        <input type="number" ng-model="fee" required>
+        <input type="text" ng-model="first">
+        <input type="text" ng-model="second">
+        <p>fullname is {{fullname() | lowercase}}</p>
+        <p>the total fee is {{full()|currency}}</p>
+        <ul>
+            <li ng-repeat="subjectt in subs | orderBy='score'">
+                {{subjectt.subject + ' marks ' + subjectt.score}}
+            </li>
+        </ul>
+    </div>
+    <script>
+        var app=angular.module("myapp",[]);
+        app.controller("control",function($scope)
+    {
+        $scope.fee=400;
+        $scope.first="first";
+        $scope.second="second";
+        $scope.full=function()
+        {
+            return $scope.fee;
+        }
+        $scope.fullname=function()
+        {
+            return $scope.first + " " + $scope.second;
+
+        };    
+    });
+    </script>
+</body>
+</html> -->
+
+

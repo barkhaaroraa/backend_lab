@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number and String Operations</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="firstNumber">Enter theee first number: </label>
+        <input type="text" id="firstNumber" required>
+        <br>
+        <p id="result"></p>
+        <button type="button" onclick="count()">count nos</button>
+    </form>
+
+</body>
+<script>
+    function count()
+    {
+        // var s=document.getElementById('firstNumber').value;
+        let s=prompt("enter a string","backu33p");
+        var len=s.length;
+        var count=0;
+        for(var i=0;i<len;i++)
+        {
+            if(s[i]==='0' || s[i]==='1' || s[i]==='2' || s[i]==='3' || 
+            s[i]==='4' || s[i]==='5' || s[i]==='6' || s[i]==='7' || 
+            s[i]==='8' || s[i]==='9')
+            {
+                count=count+1;
+            }
+            
+        }
+        document.getElementById('result').innerHTML = 'count is'+count;
+
+    }
+</script>
